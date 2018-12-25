@@ -1,0 +1,17 @@
+.example {
+    border: 5px solid #000;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .example::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 5px;
+    background: black;
+    width: 40px;
+    left: 100%;
+    top: calc(50% - 2px);
+  }
